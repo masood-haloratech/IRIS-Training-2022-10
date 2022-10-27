@@ -8,7 +8,7 @@
 
 ![New Project](assets/Config_Project_Setup.png)
 
-- The top banner will change to indicate that you are now in the setup mode. All your configuration menus are located on the left-hand side. We will work our way through each of the menu items.
+- The top banner will change to indicate that you are now in the setup mode. All your configuration menus are located on the left-hand side. 
 
 ![New Project](assets/Config_Project_Setup_Menus.png)
 
