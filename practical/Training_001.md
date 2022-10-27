@@ -21,17 +21,17 @@
 
 | Section | Field  | Value | Comment |
 | ------------- | ------------- | ------------- | ------------- |
-| Project Details |||
-|| Description | This project stores and presents COVID-19 outbreak data. | Description text gets displayed at the top of the dashboard.|
+| Project Details |
+|| Description | This project stores and presents COVID-19 outbreak data. | Gets displayed at the top of the dashboard.|
 || Project Type | General Data Project | Used for categorising projects on the home screen.|
-|| Generic Imports | True | End users are allowed to import CSV files that do not conform to an import template.|
+|| Generic Imports | True | End users are allowed to import custom CSV files.|
 || Show All Items | True | The *All Items* menu is visiable to the end user.|
-|| Geo Location Country | New Zealand| Specify the default country to use when searching for addresses. |
+|| Geo Location Country | New Zealand| Default country to use when searching for addresses. |
 || Geo Location Country Code| NZ| Same as above but for Country Code. |
-| Map Defaults ||
+| Map Defaults |
 || Centre X | 174 | The default Longitude value for opening a map. |
 || Centre Y | -41 | The default Latitude value for opening a map. |
-| Dashboard Configuration ||
+| Dashboard Configuration |
 || Configure Portlet View | Two column view | Specifies how many columns to display on the dashboard. |
 
 - Click *Save* to commit the changes
@@ -52,7 +52,7 @@
 
 | Section | Field  | Value | Comment |
 | ------------- | ------------- | ------------- | ------------- |
-| Details |||
+| Details |
 || Name | Data Viewer | |
 || Description | Provides read only access | |
 
@@ -64,7 +64,7 @@
 
 | Section | Field  | Value | Comment |
 | ------------- | ------------- | ------------- | ------------- |
-| Details |||
+| Details |
 || Name | Data Entry | |
 || Description | Provides read/write access for entering outbreak data | |
 
@@ -87,23 +87,23 @@
 
 | Project Item | Permission  | Tick |
 | ------------- | ------------- | ------------- |
-| Table Type ||
+| Table Type |
 || View table structure | Yes | 
-| Reference List ||
+| Reference List |
 || View list | Yes | 
-| Filter ||
+| Filter |
 || View filter | Yes | 
 
 - For the Data Viewer role we want to grant the following permissions.
 
 | Project Item | Permission  | Tick |
 | ------------- | ------------- | ------------- |
-| Table Type ||
+| Table Type |
 || View table structure | Yes | 
-| Reference List ||
+| Reference List |
 || View list | Yes | 
-| Report Type ||
+| Report Type |
 || View report template | Yes |
 || View newly created reports | Yes |
-| Filter ||
+| Filter |
 || View filter | Yes | 
