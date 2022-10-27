@@ -21,7 +21,7 @@
 
 | Section | Field  | Value | Comment |
 | ------------- | ------------- | ------------- | ------------- |
-| Project Details <td colspan=4>|
+| Project Details |
 || Description | This project stores and presents COVID-19 outbreak data. | Gets displayed at the top of the dashboard.|
 || Project Type | General Data Project | Used for categorising projects on the home screen.|
 || Generic Imports | True | End users are allowed to import custom CSV files.|
