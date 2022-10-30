@@ -23,8 +23,6 @@
 
 - In this section we will create the lists for Gender, International Travel and Age Group.
 
-- For the first two we will create the list items manually and for Age Group we will import the values.
-
 - To setup the Gender List, navigate to Reference Lists and click *Add*.
 
 ![Project Details](assets/RefList_Add.png)
@@ -61,9 +59,24 @@
 | no | No | | 0 |
 | yes | Yes | | 0 |
 
-- Create a new list for **Age Group** but this time do not create any list items.
+- Repeat the process to create a list for **Age Group** and create the list items in the table below
 
-- Download the list items from [practical/data/list_age_group.csv](practical/data/list_age_group.csv)
+| Item Key | Name  | Description | Order |
+| ------------- | ------------- | ------------- | ------------- |
+| age_less_1 | < 1 | | 0 |
+| age_1_to_4 | 1 to 4 | | 1 |
+| age_5_to_9 | 5 To 9 | | 5 |
+| age_10_to_14 | 10 to 14 | | 10 |
+| age_15_to_19 | 15 to 19 | | 15 |
+| age_20_to_29 | 20 to 29 | | 20 |
+| age_30_to_39 | 30 to 39 | | 30 |
+| age_40_to_49 | 40 to 49 | | 40 |
+| age_50_to_59 | 50 to 59 | | 50 |
+| age_60_to_69 | 60 to 69 | | 60 |
+| age_70_plus | 70+ | | 70 |
+| age_unknown | Unknown | | 999 |
+
+
 
 
 
