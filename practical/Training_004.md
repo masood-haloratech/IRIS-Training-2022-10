@@ -146,6 +146,13 @@
 ![Project Details](assets/Table_Build_Add_Case_Add_Field_DHB_Details_2.png)
 ![Project Details](assets/Table_Build_Add_Case_Add_Field_DHB_Details_3.png)
 
+- Once all the fields are added your control tree should look as below
+![Project Details](assets/Table_Build_Add_Case_Add_Field_Completed.png)
 
+- A quick way to test the form is to go to the *Data* Tab and click the *Add* button.
 
+![Project Details](assets/Table_Build_Add_Case_Data_Tab.png)
 
+- At the moment there is no way to access the table from the Dashboard view.
+
+- In the next tutorial we will create a Filter to access the COVID-19 Case table.
