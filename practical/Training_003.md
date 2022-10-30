@@ -1,13 +1,12 @@
 # Tutorial 3
 
-## Data Structures
-
+## Data Structures - Part 1
 
 - In our data model we have identified the following look ups
   - Gender
   - International Travel
-  - Age Group
   - Status
+  - Age Group
   - DHB
   - Country
 
@@ -17,13 +16,11 @@
 
 - We already have a table for Country and DHB in the system with full spatial boundaries. We will take advantage of them by linking them to our project.
 
-- Gender, International Travel and Age Group will be implemented as Reference Lists.
-
-- Status will be implemented as a table to demonstrate how to set one up. This will be done in the next tutorial. 
+- Gender, International Travel, Status and Age Group will be implemented as Reference Lists.
 
 ## Reference Lists
 
-- In this section we will create the lists for Gender, International Travel and Age Group.
+- In this section we will create the lists for Gender, International Travel Status, and Age Group.
 
 - To setup the Gender List, navigate to Reference Lists and click *Add*.
 
@@ -61,6 +58,13 @@
 | no | No | | 0 |
 | yes | Yes | | 0 |
 
+- Repeat the process to create a list for **Status** and create the list items in the table below
+
+| Item Key | Name  | Description | Order |
+| ------------- | ------------- | ------------- | ------------- |
+| confirmed | Confirmed | | 0 |
+| probable | Probable | | 0 |
+
 - To save time we have shared the **Age Group** list from the demo project.
 
 - To use a *shared* list click the *Link* button.
@@ -87,7 +91,6 @@
 
 ![Project Details](assets/Tables_Link_Country_DHB.png)
 
-- In the next tutorial we will create the **Status** table
 
 
 
