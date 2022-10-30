@@ -103,11 +103,11 @@
 
 ![Project Details](assets/Table_Build_Add_Case_Add_Form_Add_Section_Details.png)
 
-- Click on the **Case Details** node and then click *Add* to add a field under the form.
+- Click on the **Case Details** node and then click *Add* to add a field under the section.
 
 ![Project Details](assets/Table_Build_Add_Case_Add_Field.png)
 
-- Start by adding a *Auto Number* field
+- Start by adding an *Auto Number* field
 
 ![Project Details](assets/Table_Build_Add_Case_Add_Field_AutoNumber.png)
 
@@ -117,25 +117,35 @@
 
 - Try and create fields to match the table below. 
 
-| Field Key | Name | Data Type |
-| ------------- | ------------- | ------------- |
-| case_no | Case Number | Auto Number |
-| date_of_report | Date of Report | Date |
-| sex | Sex | Single select look up value |
-| age_group | Age Group | Single select look up value |
-| dhb | DHB | Single Relationship |
-| international_travel | International Travel | Single select look up value |
-| last_country_visited | Last Country Visited | Single Relationship |
-| flight_no | Flight Number | String |
-| flight_departure_date | Flight Departure Date | Date |
-| flight_arrival_date | Flight Arrival Date | Date |
-| case_status | Case Status | Single select look up value |
+- *Is Default User Displayable* flag is used by the system to determine the fields to show when you have not specified a display field e.g. on a map legend
 
-- See below if in doubt
+| Field Key | Name | Data Type | Required | Is Default User Displayable | Reference List | Related Type |
+| ------------- | ------------- | ------------- |------------- |------------- |------------- |------------- |
+| case_no | Case Number | Auto Number | True | True |||
+| date_of_report | Date of Report | Date | True | True |||
+| sex | Sex | Single select look up value |||Gender||
+| age_group | Age Group | Single select look up value |||Age Group||
+| dhb | DHB | Single Relationship ||||New Zealand DHB|
+| international_travel | International Travel | Single select look up value ||| International Travel ||
+| last_country_visited | Last Country Visited | Single Relationship ||||Country Boundary |
+| flight_no | Flight Number | String ||||
+| flight_departure_date | Flight Departure Date | Date ||||
+| flight_arrival_date | Flight Arrival Date | Date ||||
+| case_status | Case Status | Single select look up value ||| Status ||
+
+- Some field details for a Date and a Single select look value are shown below:
 
 ![Project Details](assets/Table_Build_Add_Case_Add_Field_Date_Of_Report_Details.png)
 ![Project Details](assets/Table_Build_Add_Case_Add_Field_Sex_Details.png)
-![Project Details](assets/Table_Build_Add_Case_Add_Field_Age_Group_Details.png)
+
+- The relationship fields require more configuration. 
+- For the DHB field see the setting below.
+- For Last Country Visited field use the same settings as the DHB
+
+![Project Details](assets/Table_Build_Add_Case_Add_Field_DHB_Details_1.png)
+![Project Details](assets/Table_Build_Add_Case_Add_Field_DHB_Details_2.png)
+![Project Details](assets/Table_Build_Add_Case_Add_Field_DHB_Details_3.png)
+
 
 
 
