@@ -21,9 +21,9 @@
 
 - The main nvaigation menu of the project is located on the left hand side.
 
-- The **Import** and **All Items** menu are common to all projects but could be hidden if requied.
+- The **Import** and **All Items** menu are common to all projects but a Project Manager may choose to hide them from users.
 
-- The remaining menu items are customizable and are called **Labels**. For this project we have created 3 labels, i.e. Case Data, Reports and Reference Data.
+- The remaining menu items are customizable and are called **Labels**. For this project we have 3 labels, i.e. Case Data, Reports and Reference Data. Labels are simply a way of grouping items in IRIS.
 
 ## Viewing Data
 
