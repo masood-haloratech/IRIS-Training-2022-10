@@ -3,21 +3,27 @@
 ## Navigation
 
 
-- Once you log into IRIS you will be presented with a list of projects or if you are only assigned one project, you will be taken directly to the project dashboard page
+- Once you log into IRIS you will be presented with a list of projects. If you have been assigned only one project then you will be taken directly to the project's dashboard page.
 
 ![New Project](assets/Basics_Home.png)
 
-- You can change how projects are presented on the home screen by clicking on the *Group By* menu on the toolbar
+- You can change how projects are presented on the home screen by clicking on the *Group By* menu on the top toolbar
 
 - Click on the **COVID-19 NZ Demo** project to open it.
 
 ![New Project](assets/Basics_Covid_Demo_Home.png)
 
-- Use the buttons on the top toolbar to navigate back a screen or to jump back to the home screeen or dashboard screen.
+- Use the buttons on the top toolbar to navigate back a screen or to jump back to the home or dashboard screens.
 
 ![New Project](assets/Basics_Covid_Demo_Home_Navigation.png)
 
-- Click the *Project Help* to see any notes or comments from the project manager.
+- Click the *Project Help* to see any notes or comments from the Project Manager.
+
+- The main nvaigation menu of the project is located on the left hand side.
+
+- The **Import** and **All Items** menu are common to all projects but could be hidden if requied.
+
+- The remaining menu items are customizable and are called **Labels**. For this project we have created 3 labels, i.e. Case Data, Reports and Reference Data.
 
 ## Viewing Data
 
