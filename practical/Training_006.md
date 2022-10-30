@@ -55,4 +55,8 @@
 
 ## Challenge 
 
-- Try and create a filter called **COVID-19 Cases - High Risk** which brings back the same columns as the **COVID-19 Cases - All** but restricts the data to age groups above 60
+- Create a filter called **COVID-19 Cases - High Risk** which brings back the same columns as the **COVID-19 Cases - All** but restricts the data to age groups above 60.
+
+- Create filter called **List - Country** and returns *Reference ID* and *Name* columns from the *Country Boundary* table.
+
+- Create filter called **List - NZ District Health Boards** and returns *Code* and *Name* and *Boundary* columns from the *New Zealand DHB* table.
