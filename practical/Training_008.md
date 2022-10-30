@@ -96,5 +96,43 @@ return(outputFileName)
 
 ![Project Details](assets/Report_Template_Case_By_DHB_Run_Report_Select_Details_Finished.png)
 
+- Repeat the same steps to create another image report template. Call the report and the template  **Cases Reported By Date**. Replace the R code with code below. Leave all the other settings the same.
 
+```
+#------------ START ------------
+outputFileName = "NumberOfCases.png"
 
+#load the libraries but supress any warnings
+library(data.table)
+library(tidyverse)
+library(ggplot2)
+
+#read the cases CSV file
+#convert the column date_of_report to a date column
+#convert the status column to factor and change the order so that probably is stacked at the top
+#group by date and status and get a tally
+cases <- fread(params$cases, header = TRUE, sep = ",", stringsAsFactors=FALSE) %>%
+        mutate(date = as.Date(date_of_report)) %>%
+        mutate(status = factor(status, levels = c("probable", "confirmed"), labels = c("Probable", "Confirmed"))) %>%
+        group_by(date, status) %>%
+        tally()
+        
+
+#plot the data as a stacked bar chart
+ggplot(cases, aes(x = date, y = n, fill = status)) + 
+        ylab("Number of Cases") + xlab("") +
+        geom_bar(position="stack", stat="identity") +
+        scale_fill_discrete(name = "") +
+        ggtitle("Reported Cases By Date") +
+        theme(
+            legend.position="bottom",
+            plot.title = element_text(hjust = 0.5)
+        )
+
+#save the output as an image
+ggsave(outputFileName, width = 16*0.75, height = 9*0.75, unit = 'in')
+
+#return the name of the image file
+return(outputFileName)
+#------------ END ------------
+```
