@@ -3,7 +3,7 @@
 ## Data Structures
 
 
-- In this tutorial we will set up the structures for storing the following look up values
+- In our data model we have identified the following look ups
   - Gender
   - International Travel
   - Age Group
@@ -13,11 +13,13 @@
 
 - Look up values can be stored in either Reference Lists or in Tables.
 
-- The choice depends on if there are other attributes that may need to be stored against the look up value e.g. a category or a spatial boundary.
+- The choice depends on if there are other attributes/fields that may need to be stored against the value e.g. a category or a spatial boundary.
 
-- For this project we already have a table for Country and DHB in the system with full spatial boundaries. We will take advantage of them by linking them to our project.
+- We already have a table for Country and DHB in the system with full spatial boundaries. We will take advantage of them by linking them to our project.
 
-- The Status look up list will be implemented as a table to demonstrate how to set one up and the rest will be created as Reference Lists.
+- Gender, International Travel and Age Group will be implemented as Reference Lists.
+
+- Status will be implemented as a table to demonstrate how to set one up. This will be done in the next tutorial. 
 
 ## Reference Lists
 
@@ -77,13 +79,15 @@
 
 - Navigate to the **Tables** menu.
 
-- This time let's start by linking in the **Country** and **New Zealand DHB** table.
+- To link the **Country** and **New Zealand DHB** table click on the *Link* button.
 
 ![Project Details](assets/Tables_Link.png)
 
 - Pick the tables and click *Select*
 
 ![Project Details](assets/Tables_Link_Country_DHB.png)
+
+- In the next tutorial we will create the **Status** table
 
 
 
