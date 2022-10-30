@@ -153,6 +153,4 @@
 
 ![Project Details](assets/Table_Build_Add_Case_Data_Tab.png)
 
-- At the moment there is no way to access the table from the Dashboard view.
-
-- In the next tutorial we will create a Filter to access the COVID-19 Case table.
+- At the moment there is no data in the tables. In the next tutorial we will import data into the COVID-19 Case table.
