@@ -19,7 +19,7 @@
 
 - The Status look up list will be implemented as a table to demonstrate how to set one up and the rest will be created as Reference Lists.
 
-### Reference Lists
+## Reference Lists
 
 - In this section we will create the lists for Gender, International Travel and Age Group.
 
@@ -59,22 +59,38 @@
 | no | No | | 0 |
 | yes | Yes | | 0 |
 
-- Repeat the process to create a list for **Age Group** and create the list items in the table below
+- To save time we have shared the **Age Group** list from the demo project.
 
-| Item Key | Name  | Description | Order |
-| ------------- | ------------- | ------------- | ------------- |
-| age_less_1 | < 1 | | 0 |
-| age_1_to_4 | 1 to 4 | | 1 |
-| age_5_to_9 | 5 To 9 | | 5 |
-| age_10_to_14 | 10 to 14 | | 10 |
-| age_15_to_19 | 15 to 19 | | 15 |
-| age_20_to_29 | 20 to 29 | | 20 |
-| age_30_to_39 | 30 to 39 | | 30 |
-| age_40_to_49 | 40 to 49 | | 40 |
-| age_50_to_59 | 50 to 59 | | 50 |
-| age_60_to_69 | 60 to 69 | | 60 |
-| age_70_plus | 70+ | | 70 |
-| age_unknown | Unknown | | 999 |
+- To use a *shared* list click the *Link* button.
+
+![Project Details](assets/RefList_Link_AgeGroup.png)
+
+- Double click the *Age Group* list row. Or click the check box and hit the *Select* button. If you have too many shared lists you may have to search for it.
+
+![Project Details](assets/RefList_Link_AgeGroup_Select.png)
+
+- Notice that linked lists have a different Owner Project
+
+![Project Details](assets/RefList_Link_AgeGroup_Owner.png)
+
+## Tables
+
+- Navigate to the **Tables** menu.
+
+- This time let's start by linking in the **Country** and **New Zealand DHB** table.
+
+![Project Details](assets/Tables_Link.png)
+
+- Pick the tables and click *Select*
+
+![Project Details](assets/Tables_Link_Country_DHB.png)
+
+
+
+
+
+
+
 
 
 
