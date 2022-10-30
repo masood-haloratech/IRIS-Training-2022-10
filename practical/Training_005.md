@@ -8,161 +8,46 @@
 
 - In this tutorial we will import COVID-19 Case data through the Generic Data Importer.
 
-- We will then have a look at how to set up a Import Template.
-
 ## Generic Data Importer
 
 - Download the cleaned CSV file from [practical/data/covid-cases-cleaned.csv](/practical/data/covid-cases-cleaned.csv)
 
-- Open it up in Excel or Notepad to inspect the column names.
+- If you clicked on the link above then in GitHub click Raw. Next right click and pick *Save As* to save the file.
 
+![Project Details](assets/Import_Case_GitHub_Csv.png)
 
+- In IRIS navigate to *Import* from the *Dashboard*
 
+- Click *Add* and pick **Generic Import**
 
+![Project Details](assets/Import_Case_Add_Generic.png)
 
-| Field Name | Comment |
-| ------------- | ------------- |
-| Case Number | An auto generated number |
-| Date of Report |  |
-| Sex | Look up using the Sex Reference List |
-| Age Group | Look up using the Age Group Reference List |
-| DHB | Relationship to the New Zealand DHB table |
-| International Travel | Look up using the Internation Travel Reference List |
-| Last Country Visited | Relationship to the Country table |
-| Flight Number | |
-| Flight Departure Date | |
-| Flight Arrival Date | |
-| Case Status | Look up using the Status Reference List |
+- Select the downloaded CSV file and click *Next*
 
-## Building Tables
+![Project Details](assets/Import_Case_Add_Generic_Select_File.png)
 
-- To create the **Covid-19 Cases** table click on the *Add* button.
+- In the *Select Entity Type* drop down pick **COVID-19 Cases**
 
-- The value for the *Unique Key* field must be unique in the system. It is recommended that you prefix the table name with your project name which includes your initials to avoid confusion e.g. Covid_19_**XX**_Cases
+- Match the CSV Headers to the appropriate fields. Note that for the DHBCode and CountryCode you need to navigate through the tree view to pick the Code and Reference ID columns respectively
 
-- Fill out the rest of the fields with the values below.
+- Your mapping should look as follows
 
-| Section | Field  | Value | Comment |
-| ------------- | ------------- | ------------- | ------------- |
-| General |
-|| Name | Covid_19_MS_Cases | |
-|| Description | Stores Covid-19 case information | |
-|| Linked | True | Used for exporting project schemas |
-| UI Properties |
-|| Width | Medium | Width of the window on screen|
-|| Height | Large | Height of the window on screen|
-|| Save Behaviour on Add New | Save and close form | When a user creates a new record then the editor will close immediately after save |
-|| Save Behaviour on Update | Save and close form | When a user updates an existing record then the editor will close immediately after save |
-|| Close Behaviour | Close All | Close all pop up windows that were generate from the editor of this table |
+![Project Details](assets/Import_Case_Add_Generic_Map_Fields.png)
 
-![Project Details](assets/Table_Build_Add_Case.png)
+- Set the *Match List Items* value to be **Match By Key**. This forces the importer to use the Item Key value instead of the Name value when trying to match entries
 
-### Configure Data Policy
+![Project Details](assets/Import_Case_Add_Generic_Map_Fields_Settings.png)
 
-- The *Data Viewer* role needs to be able to read the data in the **Covid-19 Cases** table
+- Click *Finish*
 
-- The *Data Entry* role needs to be able to read and modify the data in the **Covid-19 Cases** table
+- The import process happens in the background and may take a while. If you navigate away you can always come back to check the status.
 
-- We will create two policies. One called **Read Policy** and the other called **Read/Update Policy**
+![Project Details](assets/Import_Case_Add_Generic_Finish.png)
 
-- Click on the *Data Policies* button located on the bottom toolbar. Then click on *Add New Policy*.
+- The process of setting up an Import Template is very similar. You can find the *Import Template* menu in the Settings section.
 
-![Case Policy](assets/Table_Build_Add_Case_Policy.png)
+![Project Details](assets/Import_Case_Add_Import_Template.png)
 
-- Set the *Policy Name* to **Read Policy** and tick the *Read* checkbox.
-
-![Case Policy Read](assets/Table_Build_Add_Case_Policy_Read.png)
-
-- Next click on the newly created **Read Policy** row and click *Add Roles*.
-
-![Case Policy Add Role](assets/Table_Build_Add_Case_Policy_Read_Add_Role.png)
-
-- Select the **Data Viewer** role.
-
-![Project Details](assets/Table_Build_Add_Case_Policy_Read_Add_Role_Close.png)
-
-- Now repeat the steps to create the **Read/Update Policy** as shown below.
-
-![Project Details](assets/Table_Build_Add_Case_Policy_Read_Update.png)
-
-- Add the **Data Entry** role to it.
-
-![Project Details](assets/Table_Build_Add_Case_Policy_Read_Update_Add_Role_Close.png)
-
-### Adding Fields
-
-- To add fields to the table click on the *Table Fields* tab.
-
-- Click on the **Root** node then click *Add*. 
-
-- Always remember to click on a node before clicking on the “Add” button.
-
-![Project Details](assets/Table_Build_Add_Case_Add_Form.png)
-
-- Enter **Details** as the *Form Name* and click *Save*.
-
-![Project Details](assets/Table_Build_Add_Case_Add_Form_Details.png)
-
-- Click on the **Details** node and then click *Add* to add a section under the form.
-
-![Project Details](assets/Table_Build_Add_Case_Add_Form_Add_Section.png)
-
-- Click on the **Details** node and then click *Add* to add a section under the form.
-
-- Set the *Name* to **Case Details** and click *Save*.
-
-![Project Details](assets/Table_Build_Add_Case_Add_Form_Add_Section_Details.png)
-
-- Click on the **Case Details** node and then click *Add* to add a field under the section.
-
-![Project Details](assets/Table_Build_Add_Case_Add_Field.png)
-
-- Start by adding an *Auto Number* field
-
-![Project Details](assets/Table_Build_Add_Case_Add_Field_AutoNumber.png)
-
-- Fill out the Auto Number field details as shown below. We specify that the field is unique.
-
-![Project Details](assets/Table_Build_Add_Case_Add_Field_AutoNumber_Details.png)
-
-- Try and create fields to match the table below. 
-
-- *Is Default User Displayable* flag is used by the system to determine the fields to show when you have not specified a display field e.g. on a map legend
-
-| Field Key | Name | Data Type | Required | Is Default User Displayable | Reference List | Related Type |
-| ------------- | ------------- | ------------- |------------- |------------- |------------- |------------- |
-| case_no | Case Number | Auto Number | True | True |||
-| date_of_report | Date of Report | Date | True | True |||
-| sex | Sex | Single select look up value |||Gender||
-| age_group | Age Group | Single select look up value |||Age Group||
-| dhb | DHB | Single Relationship ||||New Zealand DHB|
-| international_travel | International Travel | Single select look up value ||| International Travel ||
-| last_country_visited | Last Country Visited | Single Relationship ||||Country Boundary |
-| flight_no | Flight Number | String ||||
-| flight_departure_date | Flight Departure Date | Date ||||
-| flight_arrival_date | Flight Arrival Date | Date ||||
-| case_status | Case Status | Single select look up value ||| Status ||
-
-- Some field details for a Date and a Single select look value are shown below:
-
-![Project Details](assets/Table_Build_Add_Case_Add_Field_Date_Of_Report_Details.png)
-![Project Details](assets/Table_Build_Add_Case_Add_Field_Sex_Details.png)
-
-- The relationship fields require more configuration. 
-- For the DHB field see the setting below.
-- For Last Country Visited field use the same settings as the DHB
-
-![Project Details](assets/Table_Build_Add_Case_Add_Field_DHB_Details_1.png)
-![Project Details](assets/Table_Build_Add_Case_Add_Field_DHB_Details_2.png)
-![Project Details](assets/Table_Build_Add_Case_Add_Field_DHB_Details_3.png)
-
-- Once all the fields are added your control tree should look as below
-![Project Details](assets/Table_Build_Add_Case_Add_Field_Completed.png)
-
-- A quick way to test the form is to go to the *Data* Tab and click the *Add* button.
-
-![Project Details](assets/Table_Build_Add_Case_Data_Tab.png)
-
-- At the moment there is no way to access the table from the Dashboard view.
+- You will need to provide the import template a name and then perform a field mapping as you did previously.
 
 - In the next tutorial we will create a Filter to access the COVID-19 Case table.
