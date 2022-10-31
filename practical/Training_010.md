@@ -105,7 +105,7 @@ return(plotName)
 
 - Here we can create report fields just like how we built Table fields.
 
-- The system automatically create a *Form* called **Parameters** and a *Section* called **Options** for us.
+- The system automatically creates a *Form* called **Parameters** and a *Section* called **Options** for us.
 
 - Click on the **Options** node and *Add* then pick *Color*
 
@@ -170,3 +170,10 @@ return(plotName)
 - Try making a copy of the report and changing the parameters to show all cases with a different colour scheme.
 
 - Try and add the new report as a portlet.
+
+## Challenge
+
+- Try and a date field to the user options section 
+- Filter the records by the date entered
+
+
