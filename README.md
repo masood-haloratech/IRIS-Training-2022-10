@@ -4,6 +4,8 @@ This repository contains resources required for the IRIS workshop.
 
 ## Tutorials
 
+### Day 1
+
 - [Tutorial 1](/practical/Training_001.md)
 - [Tutorial 2](/practical/Training_002.md)
 - [Tutorial 3](/practical/Training_003.md)
@@ -12,3 +14,6 @@ This repository contains resources required for the IRIS workshop.
 - [Tutorial 6](/practical/Training_006.md)
 - [Tutorial 7](/practical/Training_007.md)
 - [Tutorial 8](/practical/Training_008.md)
+
+### Day 2
+- [Tutorial 9](/practical/Training_009.md)
