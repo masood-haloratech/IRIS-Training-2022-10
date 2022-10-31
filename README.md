@@ -2,6 +2,8 @@
 
 This repository contains resources required for the IRIS workshop.
 
+[https://iris.episoft.nz/](https://iris.episoft.nz/)
+
 ## Tutorials
 
 ### Day 1
