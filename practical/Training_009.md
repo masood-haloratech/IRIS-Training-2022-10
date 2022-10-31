@@ -33,6 +33,3 @@
 - Navigate to *Setup* > *Project Details* and locate the *Configure Portlet View*. Set it to your preference.
 
 ![Project Details](assets/Dashboard_Setup_Column_Config.png)
-
-
-
