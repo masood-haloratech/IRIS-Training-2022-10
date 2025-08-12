@@ -2,9 +2,7 @@
 
 This repository contains resources required for the IRIS workshop.
 
-Test1
-Test2
-
+Link to the IRIS System
 [https://iris.episoft.nz/](https://iris.episoft.nz/)
 
 ## Tutorials
